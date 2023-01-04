@@ -1,0 +1,80 @@
+:root {
+    --green: #084C61;
+    --platinum: #E9E3E6;
+    --cedar: #DB504A;
+    --yellow: #E3B505;
+    --cadet: #4F6D7A;
+}
+
+body {
+    background-color: var(--platinum);
+}
+
+.bg-brand{
+    background-color: var(--green);
+}
+
+.nav-link{
+    color: var(--platinum);
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.navbar-toggler {
+   background-color: var(--yellow);
+   color: var(--yellow);
+}
+
+
+
+.active-brand{ 
+    border-bottom: 3px solid var(--platinum);
+    font-weight: bold;
+}
+
+.active-brand:hover {
+    color: var(--platinum);
+
+}
+
+.logo {
+    width: 7rem;
+}
+
+.btn {
+    background-color: var(--cedar);
+    color: var(--platinum);
+}
+
+.btn:hover {
+    color: var(--yellow);
+    background-color: var(--cadet);
+}
+
+.btn-secondary {
+    background-color: var(--yellow);
+    color:var(--green);
+    border: 0;
+}
+
+.btn-secondary:hover {
+    background-color: var(--cadet);
+    color: var(--yellow);
+    border: 0;
+}
+
+.card-header {
+    background-color: var(--green);
+    color: var(--platinum);
+}
+
+.card a{
+    text-decoration: underline;
+    color: var(--platinum)
+}
+
+.card a:hover, .card-header:hover {
+    color: var(--yellow)
+}

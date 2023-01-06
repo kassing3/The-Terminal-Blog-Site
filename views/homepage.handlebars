@@ -1,0 +1,19 @@
+<!-- Loop over each object in the blogs array -->
+{{#each blogs as |blog|}}
+
+        <section class="row row-cols-1 g-4">
+
+            <article class="col">
+                <section class="card w-80">
+                    <a href="/blog/{{blog.id}}" ><h5 class="card-header">{{blog.title}} </h5></a>
+                    <section class="card-body">
+                      <p class="card-text">{{blog.content}}</p>
+                    </section>
+                    <section class="card-footer text-musted">
+                        Posted by {{blog.user.username}} on  {{format_date blog.date_created}}
+                    </section>
+                </section>
+            </article>
+
+        </section>
+{{/each}}

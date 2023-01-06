@@ -29,7 +29,6 @@
                 
 
                 <div class="justify-content-start">
-                    <button class="btn btn-secondary" type="submit">CREATE POST</button>
                     <button class="btn" type="submit">SIGN IN</button>
                 </div>
                 
@@ -40,27 +39,22 @@
     </header>
 
     <main class="container pt-3">
-        <section class="row row-cols-1 g-4">
-
-            <article class="col">
-                <section class="card w-80">
-                    <a href="#" ><h5 class="card-header">Blog Title </h5></a>
-                    <section class="card-body">
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </section>
-                    <section class="card-footer text-musted">
-                        Posted by Username on Date
-                    </section>
-                </section>
-            </article>
-
-           
-
-            
-            
-
+    
+      <form>
+        <section class="mb-3">
+          <label for="inputEmail" class="form-label">Username</label>
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
         </section>
-
+        <section class="mb-3">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-tertiary">Sign Up</button>
+        </div>
+       
+      </form>
        
 
     </main>

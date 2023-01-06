@@ -1,7 +1,6 @@
 [
     {
         "username": "testuser",
-        "email": "test@user.com",
         "password": "password"
     }
 ]

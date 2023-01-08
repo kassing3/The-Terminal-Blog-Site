@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Blog } = require('../../models');
+const { Blog, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
@@ -15,7 +15,49 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const blogData = await Blog.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        }
+      ],
+    });
 
+    const blog = blogData.get({ plain: true });
+
+    res.render('updateBlog', {
+      ...blog,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.put('/:id', (req, res) => {
+  Blog.update(
+    {
+      title: req.body.title,
+      content: req.body.content,
+    },
+    {
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    }
+  )
+    .then((updatedBlog) => {
+      res.json(updatedBlog);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.json(err);
+    });
+});
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {

@@ -75,6 +75,17 @@ body {
     color: var(--cedar);
 }
 
+#btn-delete {
+    background-color: transparent;
+    color: var(--cedar);
+   text-decoration: underline;
+}
+
+#btn-delete:hover {
+
+    background-color: var(--yellow);
+}
+
 /* CARDS */
 
 .card-header {
@@ -101,10 +112,14 @@ body {
     font-weight: light;
 }
 
+.blog-listed {
+    margin-bottom: 2rem;
+}
+
 /* COMMENTS SECTION */
 
-#comment-form {
-    max-height: 400px;
+#floatingTextarea {
+    height: 100px;
     max-width: 540px;
 }
 

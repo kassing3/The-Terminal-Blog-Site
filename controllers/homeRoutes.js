@@ -92,9 +92,9 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-router.get('/createPost', (req, res) => {
+router.get('/createBlog', (req, res) => {
 
-  res.render('createPost');
+  res.render('createBlog');
 });
 
 module.exports = router;

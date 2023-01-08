@@ -10,9 +10,12 @@ body {
     background-color: var(--platinum);
 }
 
+
 .bg-brand{
     background-color: var(--green);
 }
+
+/* NAV BAR */
 
 .nav-link{
     color: var(--platinum);
@@ -32,8 +35,6 @@ body {
    background-color: var(--yellow);
    color: var(--yellow);
 }
-
-
 
 .logo {
     width: 7rem;
@@ -89,3 +90,21 @@ body {
 .card a:hover, .card-header:hover {
     color: var(--yellow)
 }
+
+/* INDIVIDUAl BLOG  */
+.blog-title {
+    text-transform: uppercase;
+}
+
+.blog-subtitle {
+    font-size: 18px;
+    font-weight: light;
+}
+
+/* COMMENTS SECTION */
+
+#comment-form {
+    max-height: 400px;
+    max-width: 540px;
+}
+

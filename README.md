@@ -45,7 +45,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 To use this application, use the command ```npm install``` to download the necessary modules/packages. 
 
 ## Usage
-To use this application, view the [Blog Site](https://stark-sierra-42871.herokuapp.com/).
+To use this application, view the [Blog Site](https://ancient-atoll-35557.herokuapp.com/).
 
 **Here's a screenshot of the website**
 
